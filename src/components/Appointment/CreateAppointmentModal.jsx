@@ -49,7 +49,7 @@ const CreateAppointmentModal = ({ clients, onAppointmentCreated }) => {
     };
 
     try {
-      const res = await axios.post('https://intimate-wildly-mammal.ngrok-free.app/api/v1/appointments', data, {
+      const res = await axios.post('https://user:mysecurepass123@intimate-wildly-mammal.ngrok-free.app/api/v1/appointments', data, {
         headers: { 'X-API-KEY': process.env.REACT_APP_API_KEY },
       });
       const { appointment, client } = res.data;
