@@ -17,6 +17,7 @@ const Dashboard = () => {
           api.get('/clients'),
           api.get('/appointments')
         ]);
+        console.log('CLIENTS RESPONSE:', clientsRes.data);
         setClients(clientsRes.data);
         setAppointments(appointmentsRes.data);
       } catch (error) {
